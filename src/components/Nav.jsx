@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useAuth } from '../context/AuthContext';
 import './Nav.css';
+import logo from '../assets/navbar_logo.png';
 
 function Nav() {
     const { isAuthenticated, logout } = useAuth();
@@ -18,13 +19,11 @@ function Nav() {
             {/* Main Navbar */}
             <nav className="main-navbar">
                 <div className="navbar-container">
+
                     {/* Logo */}
                     <Link to="/" className="navbar-logo">
                         <div className="logo-icon">
-                            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M20 5L35 15V25L20 35L5 25V15L20 5Z" fill="#4A9FD4" stroke="#4A9FD4" strokeWidth="2" />
-                                <path d="M12 18L20 12L28 18V26L20 32L12 26V18Z" fill="#1a3a5c" stroke="#4A9FD4" strokeWidth="1" />
-                            </svg>
+                            <img src={logo} alt="BuckHolding Logo" style={{ height: '40px', width: 'auto' }} />
                         </div>
                     </Link>
 
