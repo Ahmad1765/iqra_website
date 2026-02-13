@@ -28,9 +28,9 @@ const AdminPanel = () => {
     const [kycs, setKycs] = useState([]);
     const [transactions, setTransactions] = useState([]);
     const [contacts, setContacts] = useState([]);
-    const [stocks, setStocks] = useState([]);
+    const [stocks, setStocks] = useState([]); // eslint-disable-line no-unused-vars
     const [loading, setLoading] = useState(true);
-    const [error, setError] = useState(null);
+    const [error, setError] = useState(null); // eslint-disable-line no-unused-vars
     const [searchQuery, setSearchQuery] = useState('');
     const [userProfile, setUserProfile] = useState(null);
     const [viewTicket, setViewTicket] = useState(null); // Admin viewing specific ticket

@@ -25,7 +25,7 @@ const CheckoutForm = () => {
     const stripe = useStripe();
     const elements = useElements();
     const [amount, setAmount] = useState(10);
-    const [currency, setCurrency] = useState('usd');
+    const [currency, setCurrency] = useState('usd'); // eslint-disable-line no-unused-vars
     // eslint-disable-next-line no-unused-vars
     const [error, setError] = useState(null); // eslint-disable-line no-unused-vars
     const [processing, setProcessing] = useState(false);
