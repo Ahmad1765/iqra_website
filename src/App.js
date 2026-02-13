@@ -45,7 +45,7 @@ const MainLayout = () => {
 function App() {
     return (
         <AuthProvider>
-            <Router>
+            <Router basename={window.location.pathname.startsWith('/iqra_website') ? '/iqra_website' : '/'}>
                 <div className="App">
                     <ScrollToTop />
                     <Routes>
