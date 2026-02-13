@@ -3,7 +3,6 @@ import { useNavigate } from 'react-router-dom';
 import api from '../services/api';
 import DashboardLayout from '../layouts/DashboardLayout';
 import './Dashboard.css';
-import { stockListings } from '../data/mockData';
 import { useAuth } from '../context/AuthContext';
 
 const Dashboard = () => {

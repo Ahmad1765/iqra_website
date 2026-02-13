@@ -1,12 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
 import DashboardLayout from '../layouts/DashboardLayout';
 import NewWithdraw from './NewWithdraw';
 import DepositHistory from './DepositHistory';
 import './ManageWithdraw.css';
 
 const ManageWithdraw = ({ defaultTab = 'new' }) => {
-    const navigate = useNavigate();
     const [activeTab, setActiveTab] = useState(defaultTab);
 
     // Update state if prop changes

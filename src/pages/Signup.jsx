@@ -20,10 +20,6 @@ const Signup = () => {
     const [loading, setLoading] = React.useState(false);
     const navigate = useNavigate();
 
-    const handleChange = (e) => {
-        setFormData({ ...formData, [e.target.name]: e.target.type === 'checkbox' ? e.target.checked : e.target.value });
-    };
-
     // Easier approach: just use standard controlled inputs
     const handleFirstNameChange = (e) => setFormData({ ...formData, first_name: e.target.value });
     const handleLastNameChange = (e) => setFormData({ ...formData, last_name: e.target.value });
@@ -44,7 +40,7 @@ const Signup = () => {
         setLoading(true);
         setError('');
         try {
-            const response = await api.post('/register', formData);
+            await api.post('/register', formData);
             // Assuming register returns a token, or we redirect to login
             // For now, let's redirect to login
             setLoading(false);

@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useAuth } from '../context/AuthContext';
+import { useNavigate } from 'react-router-dom';
 import api from '../services/api';
 import './AdminPanel.css';
 import { motion } from 'framer-motion';
@@ -21,6 +22,7 @@ const stripePromise = loadStripe(stripePublishableKey).catch(err => {
 
 const AdminPanel = () => {
     const { logout } = useAuth();
+    const navigate = useNavigate();
     const [activeTab, setActiveTab] = useState('dashboard');
     const [users, setUsers] = useState([]);
     const [kycs, setKycs] = useState([]);
@@ -134,11 +136,6 @@ const AdminPanel = () => {
         holding: 0.00
     });
     const [toasts, setToasts] = useState([]);
-    const [kycForm, setKycForm] = useState({
-        firstName: '', lastName: '', address: '', country: '', city: '',
-        frontId: null, backId: null
-    });
-    const [kycLoading, setKycLoading] = useState(false);
 
     const showToast = (message, type = 'success') => {
         const id = Date.now();
@@ -525,11 +522,6 @@ const AdminPanel = () => {
         setRejectingId(null);
         setRejectionReason('');
     };
-
-    const filteredStocks = stocks.filter(s =>
-        s.symbol.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        s.name.toLowerCase().includes(searchQuery.toLowerCase())
-    );
 
     const renderContent = () => {
         if (loading && activeTab !== 'stocks' && activeTab !== 'transfer' && activeTab !== 'deposits') return <div className="loading-spinner">Loading dashboard data...</div>;
@@ -1213,7 +1205,7 @@ const AdminPanel = () => {
                                             {paymentMethod === 'card' && (
                                                 <>
                                                     <p>All Card information and payment processing are secured with <strong>SSL Secure Payment</strong>. Your encryption is protected by 256-bit SSL encryption.</p>
-                                                    <p>By proceeding with this payment option, you agree with our <a href="#">Terms of Service</a> and confirm that you have read our <a href="#">Privacy Policy</a>. You can cancel payment at any time.</p>
+                                                    <p>By proceeding with this payment option, you agree with our <button className="link-btn" onClick={() => navigate('/terms')}>Terms of Service</button> and confirm that you have read our <button className="link-btn" onClick={() => navigate('/privacy')}>Privacy Policy</button>. You can cancel payment at any time.</p>
                                                 </>
                                             )}
                                             {paymentMethod === 'bank' && (

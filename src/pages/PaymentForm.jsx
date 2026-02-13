@@ -26,7 +26,8 @@ const CheckoutForm = () => {
     const elements = useElements();
     const [amount, setAmount] = useState(10);
     const [currency, setCurrency] = useState('usd');
-    const [error, setError] = useState(null);
+    // eslint-disable-next-line no-unused-vars
+    const [error, setError] = useState(null); // eslint-disable-line no-unused-vars
     const [processing, setProcessing] = useState(false);
     const [succeeded, setSucceeded] = useState(false);
 

@@ -1,0 +1,69 @@
+﻿
+> portfolio@0.1.0 build
+> react-scripts build
+
+node.exe : [baseline-browser-mapping] The data in this module is 
+over two months old.  To ensure accurate Baseline data, please 
+update: `npm i baseline-browser-mapping@latest -D`
+At C:\Program Files\nodejs\npm.ps1:29 char:3
++   & $NODE_EXE $NPM_CLI_JS $args
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ([baseline-brows...ping 
+   @latest -D`:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Creating an optimized production build...
+[baseline-browser-mapping] The data in this module is over two 
+months old.  To ensure accurate Baseline data, please update: `npm 
+i baseline-browser-mapping@latest -D`
+
+Treating warnings as errors because process.env.CI = true.
+Most CI servers set it automatically.
+
+Failed to compile.
+
+[eslint] 
+src\layouts\DashboardLayout.jsx
+  Line 1:17:  'useEffect' is defined but never used  no-unused-vars
+
+src\pages\AdminPanel.jsx
+  Line 31:12:     'error' is assigned a value but never used                                                                                                                                                                                                                                                                                                                         no-unused-vars
+  Line 137:12:    'kycForm' is assigned a value but never used                                                                                                                                                                                                                                                                                                                       no-unused-vars
+  Line 137:21:    'setKycForm' is assigned a value but never used                                                                                                                                                                                                                                                                                                                    no-unused-vars
+  Line 141:12:    'kycLoading' is assigned a value but never used                                                                                                                                                                                                                                                                                                                    no-unused-vars
+  Line 141:24:    'setKycLoading' is assigned a value but never used                                                                                                                                                                                                                                                                                                                 no-unused-vars
+  Line 529:11:    'filteredStocks' is assigned a value but never used                                                                                                                                                                                                                                                                                                                no-unused-vars
+  Line 1216:115:  The href attribute requires a valid value to be accessible. Provide a valid, navigable address as the href value. If you cannot provide a valid href, but still need the element to resemble a link, use a button and change it with appropriate styles. Learn more: https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/anchor-is-valid.md  jsx-a11y/anchor-is-valid
+  Line 1216:183:  The href attribute requires a valid value to be accessible. Provide a valid, navigable address as the href value. If you cannot provide a valid href, but still need the element to resemble a link, use a button and change it with appropriate styles. Learn more: https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/anchor-is-valid.md  jsx-a11y/anchor-is-valid
+
+src\pages\Dashboard.jsx
+  Line 6:10:  'stockListings' is defined but never used  no-unused-vars
+
+src\pages\Home.jsx
+  Line 10:10:   'stockTickerData' is defined but never used                                                                                                                                            no-unused-vars
+  Line 373:45:  Using target="_blank" without rel="noreferrer" (which implies rel="noopener") is a security risk in older browsers: see https://mathiasbynens.github.io/rel-noopener/#recommendations  react/jsx-no-target-blank
+  Line 385:45:  Using target="_blank" without rel="noreferrer" (which implies rel="noopener") is a security risk in older browsers: see https://mathiasbynens.github.io/rel-noopener/#recommendations  react/jsx-no-target-blank
+  Line 397:45:  Using target="_blank" without rel="noreferrer" (which implies rel="noopener") is a security risk in older browsers: see https://mathiasbynens.github.io/rel-noopener/#recommendations  react/jsx-no-target-blank
+  Line 411:45:  Using target="_blank" without rel="noreferrer" (which implies rel="noopener") is a security risk in older browsers: see https://mathiasbynens.github.io/rel-noopener/#recommendations  react/jsx-no-target-blank
+  Line 564:33:  Using target="_blank" without rel="noreferrer" (which implies rel="noopener") is a security risk in older browsers: see https://mathiasbynens.github.io/rel-noopener/#recommendations  react/jsx-no-target-blank
+
+src\pages\ManageDeposit.jsx
+  Line 21:12:    'cryptoCoin' is assigned a value but never used                                                                                                                                                                                                                                                                                                                    no-unused-vars
+  Line 21:24:    'setCryptoCoin' is assigned a value but never used                                                                                                                                                                                                                                                                                                                 no-unused-vars
+  Line 418:116:  The href attribute requires a valid value to be accessible. Provide a valid, navigable address as the href value. If you cannot provide a valid href, but still need the element to resemble a link, use a button and change it with appropriate styles. Learn more: https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/anchor-is-valid.md  jsx-a11y/anchor-is-valid
+  Line 418:184:  The href attribute requires a valid value to be accessible. Provide a valid, navigable address as the href value. If you cannot provide a valid href, but still need the element to resemble a link, use a button and change it with appropriate styles. Learn more: https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/anchor-is-valid.md  jsx-a11y/anchor-is-valid
+
+src\pages\ManageReferrals.jsx
+  Line 16:27:  'baseUrl' is assigned a value but never used  no-unused-vars
+
+src\pages\ManageWithdraw.jsx
+  Line 9:11:  'navigate' is assigned a value but never used  no-unused-vars
+
+src\pages\PaymentForm.jsx
+  Line 28:22:  'setCurrency' is assigned a value but never used  no-unused-vars
+
+src\pages\Signup.jsx
+  Line 23:11:  'handleChange' is assigned a value but never used  no-unused-vars
+  Line 47:19:  'response' is assigned a value but never used      no-unused-vars
+
+
